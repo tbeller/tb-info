@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "staticSites_name": {
+            "value": "resumeSWA"
+        },
+        "storageAccounts_name": {
+            "value": "resumetbeller"
+        },
+        "location": {
+            "value": "centralus"
+        },
+        "repositoryUrl": {
+            "value": "https://github.com/tbeller/resume"
+        },
+        "branch": {
+            "value": "main"
+        }
+    }
+}
