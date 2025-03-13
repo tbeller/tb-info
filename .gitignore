@@ -38,3 +38,8 @@ Thumbs.db
 
 # Ignore local.settings.json
 local.settings.json
+
+# Ignore Bicep parameters file
+parameters.json
+*.parameters.json
+infrastructure/parameters.json
