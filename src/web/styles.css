@@ -106,6 +106,7 @@ button {
 
 .primary:hover {
     background-color: var(--secondary-color);
+    color: white;
 }
 
 .secondary {
