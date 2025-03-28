@@ -101,4 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.removeChild(link);
         });
     }
+
+    // Hide scroll indicator on scroll and enable smooth scroll on click
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+            }
+        });
+        scrollIndicator.addEventListener('click', () => {
+            const nextSection = document.querySelector('#about');
+            if (nextSection) {
+                window.scrollTo({
+                    top: nextSection.offsetTop - 70, // Adjust for header height
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 });

@@ -292,6 +292,45 @@ nav {
     gap: 1rem;
 }
 
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+    transition: opacity 0.5s ease;
+}
+
+.scroll-indicator i {
+    transition: opacity 0.3s ease;
+}
+
+.scroll-indicator.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
+
 /* ==============================================
    ABOUT SECTION
 ============================================== */
