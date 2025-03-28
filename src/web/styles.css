@@ -634,6 +634,7 @@ footer {
     .section-title { margin-bottom: 2rem; }
     .theme-toggle-desktop { display: none; }
     .theme-toggle-mobile { display: block; }
+    .scroll-indicator { display: none; }
 }
 
 /* Extra-small devices (max-width: 576px) */
